@@ -9,27 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
+    <nav class="navbar">
+        <a href="#about">אודות</a>
+        <a href="#skills">כישורים</a>
+        <a href="#projects">פרויקטים</a>
+    </nav>
+
     <header class="hero">
         <div class="profile-img-container" data-aos="zoom-in">
-    <img src="https://media.licdn.com/dms/image/v2/D4E03AQE1MmrH0bRMlw/profile-displayphoto-crop_800_800/B4EZmWQmCZGcAQ-/0/1759162558660?e=1781740800&v=beta&t=awohb_-PATDKldpDSoJQdVg1BY-87Gjby9nO9HsAXGk" alt="מתן מלמד" class="profile-img">
-</div>
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQE1MmrH0bRMlw/profile-displayphoto-crop_800_800/B4EZmWQmCZGcAQ-/0/1759162558660?e=1781740800&v=beta&t=awohb_-PATDKldpDSoJQdVg1BY-87Gjby9nO9HsAXGk" alt="מתן מלמד" class="profile-img">
+        </div>
         <div class="container">
             <h1 data-aos="fade-up" data-aos-delay="100">מתן מלמד</h1>
             <h2 data-aos="fade-up" data-aos-delay="300">סטודנט למדעי המחשב באוניברסיטה העברית</h2>
             <p data-aos="fade-up" data-aos-delay="500">מפתח תוכנה בעל תשוקה לפתרון בעיות אלגוריתמיות, מערכות מודולריות ואבטחת מידע.</p>
             <div class="hero-links" data-aos="fade-up" data-aos-delay="700">
-                <a href="mailto:nknsmatan@gmail.com" class="btn">אימייל</a>
-                <a href="https://www.linkedin.com/in/matan-melamed-b6373a387/" target="_blank" class="btn">LinkedIn</a>
-                <a href="https://github.com/nknsmatan" target="_blank" class="btn">GitHub</a>
-                <a href="CV.pdf" target="_blank" class="btn btn-outline">קורות חיים</a>
+                <a href="mailto:nknsmatan@gmail.com" class="btn"><i class="fa-solid fa-envelope"></i> אימייל</a>
+                <a href="https://www.linkedin.com/in/matan-melamed-b6373a387/" target="_blank" class="btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/nknsmatan" target="_blank" class="btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="CV.pdf" target="_blank" class="btn btn-outline"><i class="fa-solid fa-file-pdf"></i> קורות חיים</a>
             </div>
         </div>
     </header>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <h3 data-aos="fade-up">הסיפור שלי</h3>
             <p data-aos="fade-up" data-aos-delay="200">
@@ -38,7 +45,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section id="skills" class="skills">
         <div class="container">
             <h3 data-aos="fade-up">ארגז כלים טכנולוגי</h3>
             <div class="skills-grid">
@@ -54,16 +61,16 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
         <div class="container">
             <h3 data-aos="fade-up">פרויקטים נבחרים</h3>
             <div class="projects-grid">
                 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="project-tags">
-                        <span class="tag">C</span>
-                        <span class="tag">Network Security</span>
-                        <span class="tag">Docker</span>
+                        <span class="tag tag-c">C</span>
+                        <span class="tag tag-security">Network Security</span>
+                        <span class="tag tag-docker">Docker</span>
                     </div>
                     <h4>DNS Cache Poisoning Attack Tool</h4>
                     <p>פיתוח כלי אבטחת מידע ב-C לביצוע מתקפת Kaminsky-style נגד resolver של BIND9. הפרויקט כולל ארכיטקטורה מבוזרת (שרת פורטים ולקוח תוקף) המנצלת ערוץ בקרה ב-TCP, שימוש ב-Raw Sockets ובספריית LDNS להזרקת רשומות זדוניות בסביבת Docker מבודדת.</p>
@@ -72,9 +79,9 @@
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="800">
                     <div class="project-tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">OOP</span>
-                        <span class="tag">Design Patterns</span>
+                        <span class="tag tag-java">Java</span>
+                        <span class="tag tag-oop">OOP</span>
+                        <span class="tag tag-patterns">Design Patterns</span>
                     </div>
                     <h4>Bricker Game</h4>
                     <p>משחק Breakout מודולרי שנבנה תוך שימוש בעקרונות OOP מתקדמים ותבניות עיצוב (Strategy & Factory). המשחק כולל התנהגויות לבנים דינמיות (כדור מרובה, מהירות טורבו, החזרת חיים) והפרדה מוחלטת בין הלוגיקה, הרינדור וניהול האירועים.</p>
@@ -83,8 +90,8 @@
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="1200">
                     <div class="project-tags">
-                        <span class="tag">C</span>
-                        <span class="tag">Memory Management</span>
+                        <span class="tag tag-c">C</span>
+                        <span class="tag tag-memory">Memory Management</span>
                     </div>
                     <h4>Markov Node Linked List</h4>
                     <p>פיתוח ספריית מודלים של שרשראות מרקוב (Markov Chain) גנרית ב-C, עם ניהול זיכרון דינמי קפדני. כחלק מהדגמת היכולות, הספרייה שימשה כבסיס למחולל ציוצים (Tweet Generator) וסימולטור סולמות ונחשים.</p>
