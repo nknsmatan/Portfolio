@@ -13,6 +13,34 @@ body {
     background-color: #0f172a;
     color: #e2e8f0;
     line-height: 1.6;
+    padding-top: 60px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    z-index: 1000;
+    border-bottom: 1px solid #1e293b;
+}
+
+.navbar a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.navbar a:hover {
+    color: #38bdf8;
 }
 
 .container {
@@ -25,7 +53,7 @@ body {
 .hero {
     background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
     text-align: center;
-    padding: 100px 0 60px 0;
+    padding: 80px 0 60px 0;
     border-bottom: 1px solid #1e293b;
 }
 
@@ -84,6 +112,10 @@ body {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+.btn i {
+    margin-left: 6px;
+}
+
 .btn:hover {
     background-color: #7dd3fc;
     transform: translateY(-2px);
@@ -104,6 +136,7 @@ body {
 
 section {
     border-bottom: 1px solid #1e293b;
+    scroll-margin-top: 70px;
 }
 
 h3 {
@@ -198,13 +231,19 @@ h3::after {
 }
 
 .tag {
-    background-color: rgba(56, 189, 248, 0.1);
-    color: #38bdf8;
     padding: 4px 10px;
     border-radius: 4px;
     font-size: 0.8rem;
     font-weight: 600;
 }
+
+.tag-c { background-color: rgba(37, 99, 235, 0.15); color: #60a5fa; }
+.tag-java { background-color: rgba(217, 119, 6, 0.15); color: #fbbf24; }
+.tag-security { background-color: rgba(220, 38, 38, 0.15); color: #f87171; }
+.tag-docker { background-color: rgba(14, 165, 233, 0.15); color: #38bdf8; }
+.tag-oop { background-color: rgba(16, 185, 129, 0.15); color: #34d399; }
+.tag-patterns { background-color: rgba(139, 92, 246, 0.15); color: #a78bfa; }
+.tag-memory { background-color: rgba(236, 72, 153, 0.15); color: #f472b6; }
 
 .project-link {
     display: inline-block;
