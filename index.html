@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -27,7 +28,7 @@
 
     <section class="about">
         <div class="container">
-            <h3>הסיפור שלי</h3>
+            <h3 data-aos="fade-right">הסיפור שלי</h3>
             <p>
                 אני סטודנט למדעי המחשב בשנה מתקדמת באוניברסיטה העברית בירושלים. לאורך הלימודים פיתחתי חיבה עמוקה להבנת המערכות מאחורי הקלעים – החל מפרוטוקולי רשת ואבטחת מידע ועד לארכיטקטורה של קוד נקי ומודולרי בעולם ה-OOP. אני מחפש את האתגר הבא שלי בתעשייה, במטרה להביא את היכולות האנליטיות והטכניות שלי לידי ביטוי בצוות פיתוח חזק.
             </p>
@@ -38,7 +39,7 @@
         <div class="container">
             <h3>ארגז כלים טכנולוגי</h3>
             <div class="skills-grid">
-                <div class="skill-category">
+                <div class="skill-category" data-aos="fade-up">
                     <h4>שפות תכנות</h4>
                     <p>Java, C++, C, Python, Assembly</p>
                 </div>
@@ -55,7 +56,7 @@
             <h3>פרויקטים נבחרים</h3>
             <div class="projects-grid">
                 
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="project-tags">
                         <span class="tag">C</span>
                         <span class="tag">Network Security</span>
@@ -65,7 +66,7 @@
                     <p>פיתוח כלי אבטחת מידע ב-C לביצוע מתקפת Kaminsky-style נגד resolver של BIND9. הפרויקט כולל ארכיטקטורה מבוזרת (שרת פורטים ולקוח תוקף) המנצלת ערוץ בקרה ב-TCP, שימוש ב-Raw Sockets ובספריית LDNS להזרקת רשומות זדוניות בסביבת Docker מבודדת.</p>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
                     <h4>Bricker Game</h4>
                     <div class="project-tags">
                         <span class="tag">Java</span>
@@ -75,7 +76,7 @@
                     <p>משחק Breakout מודולרי שנבנה תוך שימוש בעקרונות OOP מתקדמים ותבניות עיצוב (Strategy & Factory). המשחק כולל התנהגויות לבנים דינמיות (כדור מרובה, מהירות טורבו, החזרת חיים) והפרדה מוחלטת בין הלוגיקה, הרינדור וניהול האירועים.</p>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
                     <h4>Markov Node Linked List</h4>
                     <div class="project-tags">
                         <span class="tag">C</span>
@@ -93,6 +94,12 @@
             <p>© 2026 מתן מלמד. נבנה באמצעות HTML & CSS.</p>
         </div>
     </footer>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        once: true,
+    });
+</script>
 </body>
 </html>
