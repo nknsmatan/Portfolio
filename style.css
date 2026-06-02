@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +10,8 @@ html {
 
 body {
     font-family: 'Assistant', sans-serif;
-    background-color: #0f172a; /* רקע כהה עמוק (Slate) */
-    color: #e2e8f0; /* טקסט בהיר ונוח לעין */
+    background-color: #0f172a;
+    color: #e2e8f0;
     line-height: 1.6;
 }
 
@@ -23,10 +22,8 @@ body {
     padding: 40px 20px;
 }
 
-
-
 .hero {
-    background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%); /* מדורג סגול-כהה */
+    background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
     text-align: center;
     padding: 100px 0 60px 0;
     border-bottom: 1px solid #1e293b;
@@ -41,7 +38,7 @@ body {
 
 .hero h2 {
     font-size: 1.5rem;
-    color: #38bdf8; /* כחול שמיים בולט */
+    color: #38bdf8;
     margin-bottom: 20px;
     font-weight: 600;
 }
@@ -53,7 +50,6 @@ body {
     color: #94a3b8;
 }
 
-/* כפתורים */
 .hero-links {
     display: flex;
     justify-content: center;
@@ -69,11 +65,12 @@ body {
     text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn:hover {
     background-color: #7dd3fc;
+    transform: translateY(-2px);
 }
 
 .btn-outline {
@@ -84,8 +81,10 @@ body {
 
 .btn-outline:hover {
     background-color: rgba(56, 189, 248, 0.1);
+    border-color: #7dd3fc;
+    color: #7dd3fc;
+    transform: translateY(-2px);
 }
-
 
 section {
     border-bottom: 1px solid #1e293b;
@@ -116,7 +115,6 @@ h3::after {
     max-width: 800px;
 }
 
-
 .skills-grid {
     display: flex;
     gap: 20px;
@@ -139,7 +137,6 @@ h3::after {
     font-size: 1.2rem;
 }
 
-
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -157,7 +154,6 @@ h3::after {
     flex-direction: column;
 }
 
-
 .project-card:hover {
     transform: translateY(-5px);
     border-color: #38bdf8;
@@ -167,7 +163,7 @@ h3::after {
     font-size: 1.3rem;
     color: #f8fafc;
     margin-bottom: 12px;
-    direction: ltr; /* שמות הפרויקטים באנגלית משמאל לימין */
+    direction: ltr;
     text-align: right;
 }
 
@@ -176,7 +172,6 @@ h3::after {
     color: #94a3b8;
     flex-grow: 1;
 }
-
 
 .project-tags {
     display: flex;
@@ -204,11 +199,11 @@ h3::after {
     font-size: 0.9rem;
     transition: color 0.2s ease;
 }
+
 .project-link:hover {
     color: #7dd3fc;
     text-decoration: underline;
 }
-
 
 footer {
     text-align: center;
