@@ -14,10 +14,10 @@
 
     <header class="hero">
         <div class="container">
-            <h1>מתן מלמד</h1>
-            <h2>סטודנט למדעי המחשב באוניברסיטה העברית</h2>
-            <p>מפתח תוכנה בעל תשוקה לפתרון בעיות אלגוריתמיות, מערכות מודולריות ואבטחת מידע.</p>
-            <div class="hero-links">
+            <h1 data-aos="fade-up" data-aos-delay="100">מתן מלמד</h1>
+            <h2 data-aos="fade-up" data-aos-delay="300">סטודנט למדעי המחשב באוניברסיטה העברית</h2>
+            <p data-aos="fade-up" data-aos-delay="500">מפתח תוכנה בעל תשוקה לפתרון בעיות אלגוריתמיות, מערכות מודולריות ואבטחת מידע.</p>
+            <div class="hero-links" data-aos="fade-up" data-aos-delay="700">
                 <a href="mailto:nknsmatan@gmail.com" class="btn">אימייל</a>
                 <a href="https://www.linkedin.com/in/matan-melamed-b6373a387/" target="_blank" class="btn">LinkedIn</a>
                 <a href="https://github.com/nknsmatan" target="_blank" class="btn">GitHub</a>
@@ -28,7 +28,7 @@
 
     <section class="about">
         <div class="container">
-            <h3 data-aos="fade-right">הסיפור שלי</h3>
+            <h3 data-aos="fade-up">הסיפור שלי</h3>
             <p>
                 אני סטודנט למדעי המחשב בשנה מתקדמת באוניברסיטה העברית בירושלים. לאורך הלימודים פיתחתי חיבה עמוקה להבנת המערכות מאחורי הקלעים – החל מפרוטוקולי רשת ואבטחת מידע ועד לארכיטקטורה של קוד נקי ומודולרי בעולם ה-OOP. אני מחפש את האתגר הבא שלי בתעשייה, במטרה להביא את היכולות האנליטיות והטכניות שלי לידי ביטוי בצוות פיתוח חזק.
             </p>
@@ -37,14 +37,14 @@
 
     <section class="skills">
         <div class="container">
-            <h3 data-aos="fade-right">ארגז כלים טכנולוגי</h3>
+            <h3 data-aos="fade-up">ארגז כלים טכנולוגי</h3>
             <div class="skills-grid">
-                <div class="skill-category" data-aos="fade-up">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
                     <h4>שפות תכנות</h4>
                     <p>Java, C++, C, Python, Assembly</p>
                 </div>
-                <div class="skill-category" data-aos="fade-up">
-                    <h4>טכנולוגיות, כלים וקונספטים/h4>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h4>טכנולוגיות, כלים וקונספטים</h4>
                     <p>OOP, SQL, Data Structures, Algorithms, System Programming, Network Security, Docker</p>
                 </div>
             </div>
@@ -53,7 +53,7 @@
 
     <section class="projects">
         <div class="container">
-            <h3 data-aos="fade-right">פרויקטים נבחרים</h3>
+            <h3 data-aos="fade-up">פרויקטים נבחרים</h3>
             <div class="projects-grid">
                 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="400">
@@ -68,22 +68,22 @@
                 </div>
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="800">
-                    <h4>Bricker Game</h4>
                     <div class="project-tags">
                         <span class="tag">Java</span>
                         <span class="tag">OOP</span>
                         <span class="tag">Design Patterns</span>
                     </div>
+                    <h4>Bricker Game</h4>
                     <p>משחק Breakout מודולרי שנבנה תוך שימוש בעקרונות OOP מתקדמים ותבניות עיצוב (Strategy & Factory). המשחק כולל התנהגויות לבנים דינמיות (כדור מרובה, מהירות טורבו, החזרת חיים) והפרדה מוחלטת בין הלוגיקה, הרינדור וניהול האירועים.</p>
                     <a href="#" target="_blank" class="project-link">צפייה בקוד ב-GitHub ←</a>
                 </div>
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="1200">
-                    <h4>Markov Node Linked List</h4>
                     <div class="project-tags">
                         <span class="tag">C</span>
                         <span class="tag">Memory Management</span>
                     </div>
+                    <h4>Markov Node Linked List</h4>
                     <p>פיתוח ספריית מודלים של שרשראות מרקוב (Markov Chain) גנרית ב-C, עם ניהול זיכרון דינמי קפדני. כחלק מהדגמת היכולות, הספרייה שימשה כבסיס למחולל ציוצים (Tweet Generator) וסימולטור סולמות ונחשים.</p>
                     <a href="#" target="_blank" class="project-link">צפייה בקוד ב-GitHub ←</a>
                 </div>
@@ -97,12 +97,13 @@
             <p>© 2026 מתן מלמד. נבנה באמצעות HTML & CSS.</p>
         </div>
     </footer>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init({
-        duration: 800,
-        once: true,
-    });
-</script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
 </body>
 </html>
