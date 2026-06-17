@@ -58,7 +58,7 @@ body {
     content: '';
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
     width: 0;
     height: 2px;
     background-color: #38bdf8;
@@ -130,6 +130,7 @@ body {
     max-width: 600px;
     margin: 0 auto 30px auto;
     color: #94a3b8;
+    text-align: center;
 }
 
 .hero-links {
@@ -151,7 +152,7 @@ body {
 }
 
 .btn i {
-    margin-left: 6px;
+    margin-right: 6px;
 }
 
 .btn:hover {
@@ -189,7 +190,7 @@ h3::after {
     content: '';
     position: absolute;
     bottom: -5px;
-    right: 0;
+    left: 0;
     width: 40px;
     height: 3px;
     background-color: #38bdf8;
@@ -200,6 +201,7 @@ h3::after {
     font-size: 1.1rem;
     color: #cbd5e1;
     max-width: 800px;
+    text-align: left;
 }
 
 .skills-grid {
@@ -222,6 +224,11 @@ h3::after {
     color: #38bdf8;
     margin-bottom: 10px;
     font-size: 1.2rem;
+    text-align: left;
+}
+
+.skill-category p {
+    text-align: left;
 }
 
 .projects-grid {
@@ -251,13 +258,14 @@ h3::after {
     color: #f8fafc;
     margin-bottom: 12px;
     direction: ltr;
-    text-align: right;
+    text-align: left;
 }
 
 .project-card p {
     font-size: 0.95rem;
     color: #94a3b8;
     flex-grow: 1;
+    text-align: left;
 }
 
 .project-tags {
@@ -266,6 +274,7 @@ h3::after {
     flex-wrap: wrap;
     margin-bottom: 15px;
     direction: ltr;
+    justify-content: flex-start;
 }
 
 .tag {
@@ -291,6 +300,7 @@ h3::after {
     font-weight: 600;
     font-size: 0.9rem;
     transition: color 0.2s ease;
+    text-align: left;
 }
 
 .project-link:hover {
