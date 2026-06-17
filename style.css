@@ -46,8 +46,7 @@ body {
     position: relative;
     padding: 5px 0;
     transition: color 0.3s ease;
-    display: flex;
-    align-items: center;
+    display: inline-block;
 }
 
 .nav-link:hover {
@@ -78,6 +77,7 @@ body {
     margin-left: 30px;
     margin-right: 30px;
     pointer-events: none;
+    vertical-align: middle;
 }
 
 .container {
@@ -236,6 +236,7 @@ h3::after {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
     margin-top: 25px;
+    align-items: stretch;
 }
 
 .project-card {
@@ -246,6 +247,8 @@ h3::after {
     transition: transform 0.3s ease, border-color 0.3s ease;
     display: flex;
     flex-direction: column;
+    justify-content: transform;
+    height: 100%;
 }
 
 .project-card:hover {
@@ -257,7 +260,6 @@ h3::after {
     font-size: 1.3rem;
     color: #f8fafc;
     margin-bottom: 12px;
-    direction: ltr;
     text-align: left;
 }
 
@@ -266,6 +268,7 @@ h3::after {
     color: #94a3b8;
     flex-grow: 1;
     text-align: left;
+    margin-bottom: 15px;
 }
 
 .project-tags {
@@ -273,7 +276,6 @@ h3::after {
     gap: 8px;
     flex-wrap: wrap;
     margin-bottom: 15px;
-    direction: ltr;
     justify-content: flex-start;
 }
 
@@ -294,7 +296,7 @@ h3::after {
 
 .project-link {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: auto;
     color: #38bdf8;
     text-decoration: none;
     font-weight: 600;
